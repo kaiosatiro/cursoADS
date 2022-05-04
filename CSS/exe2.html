@@ -1,0 +1,53 @@
+<!--
+    EXE2
+
+    Altere o css para fatorar o código HTML seguindo a imagem: 
+    https://drive.google.com/open?id=1FFPQq7nbKwnaPR1Y9_p8wiZOGd81lKk0
+
+    Use apenas seletores por classe. 
+    (Novamente, pode colocar classes nas tags html)
+    Para exercitarmos o conceito de classe, faremos o seguinte:
+    1) Cada seletor terá apenas uma regra associada
+    2) A mesma regra não deverá aparecer em dois seletores diferentes
+    (por exemplo, se você quiser usar font-size: 16px, 
+    faça isso em apenas um seletor)
+
+
+    As regras específicas são:
+     -- a borda da caixa deve ter grossura de 1px, cor negra e estilo sólido.
+     -- O primeiro parágrafo deve ter tamanho 18px, negrito, 
+     cor preta e texto centralizado.
+     -- O segundo parágrafo deve ter tamanho 14px e cor azul.
+     -- O terceiro parágrafo deve ter tamanho 14px, negrito e cor verde.
+     -- O quarto parágrafo deve ter cor amarela, itálico e tamanho 16px.
+     -- O quinto parágrafo deve se sublinhado e ter cor vermelha e tamanho 18px.
+     -- O último parágrafo deve ter cor roxa e tamanho 16px.
+-->
+ <style>
+.info{border: solid 1px black;}
+.f18{font-size: 18px;}
+.f14{font-size: 14px;}
+.f16{font-size: 16px;}
+.centralizado{text-align: center;}
+.negrito{font-weight: bold;}
+.italico{font-style: italic;}
+.sublinhado{text-decoration: underline;}
+.azul{color: blue;}
+.verde{color: green;}
+.amarelo{color: yellow;}
+.vermelho{color: red;}
+.roxo{color: purple;}
+</style>
+ <div class="info">
+    <p class="f18 negrito centralizado">Sistemas de Órgãos Colegiados</p>
+    <p class="f14 azul">Cursos de Graduação</p>
+    <p class="f14 negrito verde">Cursos de Pós-Graduação</p>
+    <p class="f16 italico amarelo">Mestrado</p>
+    <p class="vermelho f18 sublinhado">Doutorado</p>
+    <p><pre class="f16 roxo">
+        Esta é
+                a primeira
+        aula de
+                CSS.
+    </pre></p>
+</div>

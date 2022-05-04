@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .destaque {
+        color: red;      
+      }
+    </style>
+  </head>
+  <body>
+        <ol>
+            {% if ganhador in lista %}
+              {{mensagem}}
+            {% endif %}
+            {% for item in lista %}
+              {% if item == ganhador %}
+                <li class=destaque>{{ item }}</li>
+              {% else %}
+                <li>{{ item }}</li>
+              {% endif %}        
+            {% endfor %}
+          </ol>    
+  </body>
+</html>
